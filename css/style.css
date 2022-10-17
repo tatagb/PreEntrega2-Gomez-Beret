@@ -537,7 +537,6 @@ textarea {
 
 footer {
     grid-area: footer;
-    z-index: 1;
 }
 
 footer div {
