@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER - COMÚN PARA TODAS LAS PÁGINAS*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+body header {
+    background-image: url(../img/fondo__header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: medium;
+    position: sticky;
+    grid-area: header;
+
+}
+
+body header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body header div h1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+body header div h2 {
+    font-size: xx-large;
+}
+
+body header nav {
+    background-color: black;
+
+}
+
+body header nav div ul {
+    display: flex;
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+body header nav div ul li {
+    display: inline-block;
+    color: white;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/huesomenu.png)
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #E5446D;
+}
+
+.navbar-toggler {
+    border: solid 1px white;
+}
+
+.navbar-collapse {
+    color: white;
+}
+
+.container-fluid {
+    color: white;
+}
+
+/* MAIN: INDEX*/
+main {
+    grid-area: main;
+}
+
+.emergencias {
+    position: fixed;
+    background-color: gainsboro;
+    border-radius: 20px;
+    width: 200px;
+    right: 3%;
+    bottom: 20%;
+    text-align: center;
+    padding: 0px;
+    margin: 0%;
+    z-index: 1;
+}
+
+.emergencias a {
+    color: red;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.emergencias img {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.d-block {
+    width: 400px;
+    height: 700px;
+}
+
+.carousel-inner h5 {
+    font-family: 'Preahvihear', sans-serif;
+    color: wheat;
+}
+
+.carousel-inner p {
+    font-family: 'Preahvihear', sans-serif;
+    color: wheat;
+}
+
+
+.cu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021023;
+    border-top: white solid;
+}
+
+.consejos {
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Preahvihear', sans-serif;
+    color: white;
+}
+
+.consejos h2 {
+    font-size: medium;
+}
+
+.consejos p {
+    font-size: medium;
+}
+
+.tarjetas-de-consejos {
+    display: flex;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: #d9ee49;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+    height: 350px;
+    width: 200px;
+    border-radius: 15px;
+    overflow: scroll
+}
+
+.card img {
+    border-radius: 100%;
+    margin: 0 45px 0 45px;
+}
+
+.card h3 {
+    margin-bottom: 0;
+    font-family: 'Preahvihear', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Preahvihear', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+    color: black;
+}
+
+.cu{
+    width: 100%;
+    margin: 0;
+}
+
+.cu iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.mapa {
+    background-color: #021023;
+    width: 100%;
+    height: 650px;
+    border-top: white solid;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.mapa h2 {
+    font-size: x-large;
+}
+
+.mapa h3 {
+    font-size: x-large;
+}
+
+.consultorios {
+    background-color: #021023;
+    border-top: white solid;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+}
+
+.consultorios div h2 {
+    font-family: 'Preahvihear', sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+.consultorios div h3 {
+    font-family: 'Preahvihear', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.consultorios div img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+
+
+/* MAIN: "NOSOTROS"  */
+.mainNosotros {
+    background-image: url(../img/fondo__nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    grid-area: main;
+}
+
+.mainNosotros h2 {
+    color: #e24e98;
+    font-family: 'Preahvihear', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.mainNosotros p {
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    text-align: justify;
+    text-align: center;
+}
+
+
+.staff h3 {
+    font-size: x-large;
+}
+
+
+.dr {
+    background-color: white;
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+    padding: 0%;
+    margin: 20px;
+    transition: 0.5s;
+    flex: 0;
+}
+
+.nombremedico {
+    color: white;
+    background-color: #470024;
+    font-family: 'Preahvihear', sans-serif;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    margin-top: 250px;
+}
+
+.dr img {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* MAIN - PÁGINA "SERVICIOS" */
+.mainServicios {
+    background-image: url(../img/fh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    grid-area: main;
+
+}
+
+.contenedorDeTarjetas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.fila {
+    justify-content: center;
+    padding: 0;
+    margin: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+    padding: 0%;
+    margin: 20px;
+    transition: 0.5s;
+    flex: 0;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
+.tarjeta h3 {
+    font-family: 'Preahvihear', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.tarjeta a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.tarjeta img {
+    width: 250px;
+    height: 250px;
+    border-radius: 0 0 15px 15px;
+    justify-content: center;
+}
+
+/* MAIN - PÁGINA "PETSHOP" */
+.mainPetShop {
+    background-image: url(../img/fondo__petshop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    grid-area: main;
+}
+
+.contenedorDeProductos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.productos {
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+    padding: 0%;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.productos:hover {
+    transform: scale(1.1);
+}
+
+.productos h3 {
+    font-family: 'Preahvihear', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.452);
+    font-size: large;
+    font-weight: bold;
+}
+
+.productos img {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
+
+.productos a {
+    text-decoration: none;
+    font-family: 'Preahvihear', sans-serif;
+    background-color: pink;
+    color: black;
+    padding: 5px 10px 5px 10px;
+}
+
+.productos{
+    flex: 0;
+}
+
+/* MAIN - PÁGINA "CONTACTO" */
+
+.principal {
+    background-image: url(../img/fondo__contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    margin: 0px;
+    grid-area: main;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 450px;
+    height: 470px;
+    margin: auto;
+    background: rgba(0, 0, 0, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    border-radius: 7px;
+    position: relative;
+}
+
+form h2 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Preahvihear', sans-serif;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background-color: darkgrey;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+/* FOOTER - COMÚN PARA TODAS LAS PÁGINAS */
+
+footer {
+    grid-area: footer;
+    z-index: 1;
+}
+
+footer div {
+    background-color: gray;
+    background-position: center;
+    color: black;
+    font-family: 'Preahvihear', sans-serif;
+    text-size-adjust: 30px;
+
+}
+
+.footer1 {
+    border-top: white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+}
+
+
+footer .footer2 {
+    background-color: gray;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer2 h3 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer2 h4 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer2 h5 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+footer .footer3 {
+    background-color: gray;
+    background-position: center;
+    font-family: 'Preahvihear', sans-serif;
+    text-size-adjust: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*MEDIA QUERY---*/
+
+
+@media screen and (max-width:1400px) {
+
+    .consejos {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjetas-de-consejos {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width:1255px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+
+    .consultorios img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:1040px) {
+        .mapa iframe {
+            border-radius: 100%;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        .tarjetas-de-consejos {
+            flex-direction: column;
+        }
+
+        .card {
+            transform: scale(1.1);
+        }
+
+        .consejos {
+            flex-direction: column;
+        }
+
+        .consejos h2 {
+            font-size: large;
+        }
+
+        .consejos p {
+            font-size: large;
+        }
+    }
+
+    @media screen and (max-width:560px) {
+        .consultorios div img {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .consultorios div h2 {
+            font-size: large;
+        }
+
+        .consultorios div h3 {
+            font-size: medium;
+        }
+    }
+
+
+    @media screen and (max-width:450px) {
+
+        form {
+            width: 300px;
+        }
+
+
+    }
+}
+
+@media screen and (max-height:530px) {
+
+    .principal {
+        height: 100%;
+    }
+
+
+}
+@media screen and (max-width:376px) {
+
+body header div h1{
+    font-size: large;
+}
+body header div h2{
+    font-size: large;
+}
+
+
+}
