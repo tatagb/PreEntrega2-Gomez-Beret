@@ -644,9 +644,9 @@ footer .footer3 {
             flex-direction: column;
         }
 
-        .card {
+        /* .card {
             transform: scale(1.1);
-        }
+        } */
 
         .consejos {
             flex-direction: column;
